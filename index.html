@@ -8,21 +8,55 @@
   <title>Noeun Kim Portfolio 2022</title>
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/main.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="js/jquery-3.6.0.min.js">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
-  <div class="intro">
-    <canvas id="canvas"></canvas>
-    <img src="img/design.gif" class="design">
-    <img src="img/2022ver.gif" class="ver">
-    <img src="img/portfolio.gif" class="portfolio">
-  </div>
-  <div id="passport">
-    <div id='stars'></div>
-    <div id='stars2'></div>
-    <div id='stars3'></div>
-  </div>
+  <div id="wrap">
+    <div class="main">
+      <canvas id="canvas"></canvas>
+      <div data-aos="fade-right" data-aos-duration="2000" class="design">
+        <img src="img/design.gif">
+      </div>
+      <div data-aos="fade-down" data-aos-duration="2000" data-aos-delay="400" class="ver">
+        <img src="img/2022ver.gif">
+      </div>
+      <div data-aos="fade-left" data-aos-duration="2000" data-aos-delay="300" class="portfolio">
+        <img src="img/portfolio.gif">
+      </div>
+    </div>
+    <div id="intro">
+      <div id='stars'></div>
+      <div id='stars2'></div>
+      <img src="img/gradient.png" class="gradient">
+      <div class="hello">
+        <h1 data-aos="fade-up" data-aos-duration="500" class="hello1">반갑습니다.</h1>
+        <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" class="hello2">생각하는 디자이너 ‘노은’입니다.</h1>
+        <ul class="think">
+          <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">사용자의 마음을 생각합니다.</li>
+          <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">더 나은 디자인을 생각합니다.</li>
+          <li data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">함께하는 사람을 생각합니다.</li>
+        </ul>
+      </div><!-- hello -->
+      <div class="pas">
+        <img data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" src="img/pas.png" class="passport">
+      </div><!-- info -->
+    </div><!-- intro -->
+    <div class="skillsarea">
+      <img src="img/skills.png" class="tit">
+      <ul class="skills">
+        <li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100" class="sk_ps">Ps</li>
+        <li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200" class="sk_ai">Ai</li>
+        <li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300" class="sk_html">Html</li>
+        <li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400" class="sk_css">CSS</li>
+        <li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500" class="sk_js">JS</li>
+        <li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="600" class="sk_jq">jQ</li>
+      </ul><!-- skills -->
+    </div><!-- skillsarea -->
+  </div><!-- wrap -->
+
 
   <script src='https://cdnjs.cloudflare.com/ajax/libs/gl-matrix/2.1.0/gl-matrix.js'></script>
   <script>/*
@@ -160,7 +194,7 @@ An attempt of writing a space travel animation
       halfh = canvas.height / 2;
     };
 
-
+    AOS.init();
   </script>
 </body>
 
