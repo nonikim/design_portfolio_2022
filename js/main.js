@@ -19,21 +19,6 @@ $(function () {
         $(this).parent('.menu').toggleClass('active');
     });
 
-    $('.icons div:nth-child(1)').click(function () {
-        $('html,body').stop().animate({ scrollTop: contact }, 500);
-    })
-    $('.icons div:nth-child(2)').click(function () {
-        $('html,body').stop().animate({ scrollTop: works_list }, 500);
-    })
-    $('.icons div:nth-child(3)').click(function () {
-        $('html,body').stop().animate({ scrollTop: personaarea }, 500);
-    })
-    $('.icons div:nth-child(4)').click(function () {
-        $('html,body').stop().animate({ scrollTop: 2800 }, 500);
-    })
-    $('.icons div:nth-child(5)').click(function () {
-        $('html,body').stop().animate({ scrollTop: 0 }, 500);
-    })
 
     $('.worksmenu ul li:nth-child(1)').click(function () {
         let goUi = $('#uxui1').offset();
