@@ -317,21 +317,21 @@ canvas {
 
 .hello1 {
   position: absolute;
-  top: 0;
+  top: 20vh;
   left: 20vw;
   font-size: 40px;
 }
 
 .hello2 {
   position: absolute;
-  top: 15vh;
+  top: 35vh;
   left: 55vw;
   font-size: 40px;
 }
 
 .think {
   position: absolute;
-  top: 25vh;
+  top: 45vh;
   left: 55vw;
 }
 
