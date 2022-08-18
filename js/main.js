@@ -24,23 +24,23 @@ $(function () {
     $('.worksmenu ul li:nth-child(1)').click(function () {
         let goUi = $('#uxui1').offset();
         $('html,body').animate({ scrollTop: goUi.top + 1 }, 500);
-    })
+    });
     $('.worksmenu ul li:nth-child(2)').click(function () {
         let goApp = $('#app2').offset();
-        $('html,body').animate({ scrollTop: goApp.top + 1 }, 500)
-    })
+        $('html,body').animate({ scrollTop: goApp.top + 1 }, 500);
+    });
     $('.worksmenu ul li:nth-child(3)').click(function () {
         let goWeb = $('#web3').offset();
-        $('html,body').animate({ scrollTop: goWeb.top + 1 }, 500)
-    })
+        $('html,body').animate({ scrollTop: goWeb.top + 1 }, 500);
+    });
     $('.worksmenu ul li:nth-child(4)').click(function () {
         let goBx = $('#bx4').offset();
-        $('html,body').animate({ scrollTop: goBx.top + 1 }, 500)
-    })
+        $('html,body').animate({ scrollTop: goBx.top + 1 }, 500);
+    });
 
     $(window).on('scroll', function () {
         let scr = $(this).scrollTop();
-        //console.log(scr);
+        console.log(scr);
         if (scr >= 4200) {
             $('.worksmenu ul').addClass('fadein');
             $('.worksmenu ul li').addClass('on');
@@ -48,26 +48,26 @@ $(function () {
             $('.worksmenu ul').removeClass('fadein');
             $('.worksmenu ul li').removeClass('on');
         }
-        if (scr >= 5499 && scr < 10513) {
+        if (scr >= 5300 && scr < 10199) {
             $('.worksmenu ul').addClass('works');
             $('.worksmenu ul li').removeClass('on');
             $('.worksmenu ul li:nth-child(1)').addClass('on');
-        } else if (scr >= 10513 && scr < 11490) {
+        } else if (scr >= 10199 && scr < 11200) {
             $('.worksmenu ul').addClass('works');
             $('.worksmenu ul li').removeClass('on');
             $('.worksmenu ul li:nth-child(2)').addClass('on');
-        } else if (scr >= 11490 && scr < 13490) {
+        } else if (scr >= 11200 && scr < 13000) {
             $('.worksmenu ul').addClass('works');
             $('.worksmenu ul li').removeClass('on');
             $('.worksmenu ul li:nth-child(3)').addClass('on');
-        } else if (scr >= 13490) {
+        } else if (scr >= 13000) {
             $('.worksmenu ul').addClass('works');
             $('.worksmenu ul li').removeClass('on');
             $('.worksmenu ul li:nth-child(4)').addClass('on');
         } else {
             $('.worksmenu ul').removeClass('works');
         }
-    })
+    });
 
     $('.uiuxlist div:nth-child(1)').on('click', function () {
         let dyson = $('.dyson').offset().top;
