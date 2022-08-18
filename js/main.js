@@ -10,6 +10,7 @@ $(function () {
     let personaarea = $('.personaarea').offset().top;
     let works_list = $('.works_list').offset().top;
     let uiux = $('.works_uiux').offset().top;
+
     let app = $('.app_gajago').offset().top;
     let web = $('.web').offset().top;
     let bx = $('.bx').offset().top;
@@ -47,19 +48,19 @@ $(function () {
             $('.worksmenu ul').removeClass('fadein');
             $('.worksmenu ul li').removeClass('on');
         }
-        if (scr >= uiux && scr < app) {
+        if (scr >= 5499 && scr < 10513) {
             $('.worksmenu ul').addClass('works');
             $('.worksmenu ul li').removeClass('on');
             $('.worksmenu ul li:nth-child(1)').addClass('on');
-        } else if (scr >= app && scr < web) {
+        } else if (scr >= 10513 && scr < 11490) {
             $('.worksmenu ul').addClass('works');
             $('.worksmenu ul li').removeClass('on');
             $('.worksmenu ul li:nth-child(2)').addClass('on');
-        } else if (scr >= web && scr < bx) {
+        } else if (scr >= 11490 && scr < 13490) {
             $('.worksmenu ul').addClass('works');
             $('.worksmenu ul li').removeClass('on');
             $('.worksmenu ul li:nth-child(3)').addClass('on');
-        } else if (scr >= bx) {
+        } else if (scr >= 13490) {
             $('.worksmenu ul').addClass('works');
             $('.worksmenu ul li').removeClass('on');
             $('.worksmenu ul li:nth-child(4)').addClass('on');
