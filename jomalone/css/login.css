@@ -1,0 +1,384 @@
+#wrap{
+    width: 100%;
+    overflow: hidden;
+}
+header {
+    height: 60px;
+    background-color: #fff;
+    position: relative;
+}
+
+.logo {
+    text-align: center;
+    padding-top: 23px;
+}
+.logo img{
+    height: 20px;
+}
+
+.gnb_pc {
+    display: none;
+}
+
+.openM {
+    position: absolute;
+    top: 25px;
+    left: 20px;
+}
+
+.openM a {
+    width: 30%;
+    display: block;
+}
+
+.openM a img {
+    height: 10px;
+}
+.gnb_mob{
+    display: none;
+}
+.gnb_mob h2{
+    font-weight: normal;
+    padding: 20px;
+    font-size: 20px;
+}
+.gnb_mob {
+    width: 100%;
+    background-color: #fbf7e6;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 10;
+}
+.gnb_mob .depth1{
+    border-bottom: 1px solid #000;
+}
+.gnb_mob .depth2{
+    display: none;
+    font-size: 16px;
+}
+.gnb_mob .depth2 li{
+    padding: 15px 0;
+}
+.gnb_mob .depth2 h3{
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.gnb_mob .depth2 a{
+    display: block;
+    padding: 0px 30px 5px 30px;
+}
+
+.gnb_mob .depth3{
+    display: none;
+}
+.gnb_mob .depth3 li a {
+    display: block;
+    font-size: 14px;
+    padding: 0px 30px 5px 30px;
+}
+.gnb_mob .depth3 li{
+    padding: 10px;
+}
+.gnb_mob img{
+    width: 90%;
+}
+.addmenu{
+ margin: 50px 0;
+}
+.addmenu a{
+    display: block;
+    height: 40px;
+    line-height: 80px;
+    margin-left: 20px;
+}
+.util {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.util a {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    margin: 0 5px;
+}
+.util a img{
+    height: 100%;
+}
+
+.util .ribbon {
+    display: none;
+}
+#loginpage{
+    width: 100vw;
+    height: 900px;
+    background: url(../img/loginbg.png)no-repeat center right;
+    position: relative;
+}
+#loginpage .box{
+    width: 350px;
+    background-color: #fbf7e6fa;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 50px;
+}
+#loginpage input{
+    width: 350px;
+    height: 50px;
+    margin: 10px 0;
+    padding: 0 20px;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+#loginpage button{
+    width: 350px;
+    height: 50px;
+    border: 0;
+    background-color: #000;
+    color: #fff;
+    margin: 50px 0 10px 0;
+}
+#loginpage a{
+    font-size: 14px;
+    color: #222;
+    text-decoration: underline;
+}
+#loginpage .join{
+    float: right;
+}
+#loginpage span{
+    font-size: 14px;
+    color: #222;
+}
+footer{
+    width: 100vw;
+    position: relative;
+}
+.footerin {
+    font-size: 12px;
+    background-color: #fbf7e6;
+    overflow: hidden;
+    width: 100vw;
+}
+
+.fmenu {
+    display: flex;
+    padding: 30px 0px 50px 30px;
+}
+
+.fmenu li {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
+
+.fmenu a {
+    line-height: 3em;
+}
+.finfo {
+    margin: 30px 50px 30px 30px;
+}
+.finfo ul{
+    display: flex;
+    margin: 30px 0;
+}
+.finfo ul li{
+    margin-right: 10px;
+    text-decoration: underline;
+    font-size: 11px;
+}
+.finfo p{
+    font-size: 11px;
+    line-height: 1.4em;
+}
+@media all and (min-width:720px){
+   
+    .fmenu{
+        float: left;
+    }
+    .finfo {
+        float: right;
+        text-align: right;
+    }
+    .finfo ul{
+        flex-direction: row-reverse;
+    }
+    .finfo ul li{
+        margin-right: 0px;
+        margin-left: 10px;
+    }
+
+}
+@media all and (min-width:1440px){
+    header {
+        height: 74px;
+    }
+    .logo img{
+        height: 26px;
+    }
+    .util a{
+        margin: 0 15px;
+    }
+
+    .util .ribbon {
+        display: inline-block;
+    }
+    .openM{
+        display: none;
+    }
+    .gnb_pc {
+        display: flex;
+        position: absolute;
+        top: 50%;left: 0;
+        transform: translateY(-50%);
+        z-index: 100;
+    }
+    .gnb_pc .depth1{
+        margin-left: 50px;
+        overflow: hidden;
+    }
+    .gnb_pc h2{
+        font-weight: normal;
+        font-size: 15px;
+    }
+    .gnb_pc .depth1 .depth2{
+        float: left;
+        position: absolute;
+        top:46px;left: 0;
+        background-color: #fff;
+        width: 100vw;
+        height: 550px;
+        padding: 20px 50px;
+        display: none;
+    }
+    .gnb_pc .depth1 .depth2 h3{
+        font-weight: normal;
+        font-size: 15px;
+    }
+    .gnb_pc .depth1 .depth2 li{
+        float: left;
+        padding-right: 30px;
+    }
+
+    .gnb_pc .depth3{
+        position: absolute;
+        top: 38px;left: 0;
+        background-color: #fff;
+        width: 100vw;
+        height: 450px;
+        padding: 50px 50px;
+        font-size: 14px;
+        display: none;
+    }
+
+    .gnb_pc .depth1 .depth2 li:hover>.depth3{
+        display: block;
+    }
+    .gnb_pc .depth1 .depth2 li:hover>h3{
+        text-decoration: underline;
+    }
+    .gnb_pc .depth3 li a{
+        display: block;
+        line-height: 2em;
+    }
+    .new li a:first-child img{
+        margin-bottom: 10px;
+    }
+    .best li a:first-child{
+        width: 250px;
+        height: 168px;
+        display: block;
+        overflow: hidden;
+        background-image: url(../img/best.JPG);
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        margin-bottom: 10px;
+    }
+    .best li:nth-child(2) a:first-child{
+        background-position: -310px 0;
+    }
+    .best li:nth-child(3) a:first-child{
+        background-position: -620px 0;
+    }
+
+    .scent li a:first-child{
+        width: 250px;
+        height: 88px;
+        display: block;
+        overflow: hidden;
+        background-image: url(../img/scent.PNG);
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        margin-bottom: 10px;
+    }
+    .scent li:nth-child(2) a:first-child{
+        background-position: -310px 0;
+    }
+    .scent li:nth-child(3) a:first-child{
+        background-position: -620px 0;
+    }
+    .scent li:nth-child(4) a:first-child{
+        background-position: -930px 0;
+    }
+    .scent li:nth-child(5) a:first-child{
+        background-position: -1240px 0;
+    }
+    .scent li:nth-child(6) a:first-child{
+        background-position: -1550px 0;
+    }
+    .colongne li a:first-child img{
+        height: 200px;
+        margin-bottom: 20px;
+    }
+    .bath li a:first-child img{
+        height: 200px;
+        margin-bottom: 20px;
+    }
+    .home li a:first-child img{
+        height: 200px;
+        margin-bottom: 20px;
+    }
+    .mens li a:first-child{
+        width: 250px;
+        height: 168px;
+        display: block;
+        overflow: hidden;
+        background-image: url(../img/mens.JPG);
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        margin-bottom: 10px;
+    }
+    .mens li:nth-child(2) a:first-child{
+        background-position: -310px 0;
+    }
+    .mens li:nth-child(3) a:first-child{
+        background-position: -620px 0;
+    }
+    .gift li a{
+        display: block;
+        line-height: 2em;
+        font-size: 14px;
+    }
+    .gift li a:first-child img{
+        margin-bottom: 10px;
+    }
+    .brand li a{
+        display: block;
+        line-height: 2em;
+        font-size: 14px;
+    }
+    .brand li a:first-child img{
+        margin-bottom: 10px;
+    }
+    #mainslider_pc a img{
+        width:100%;
+    }
+
+}

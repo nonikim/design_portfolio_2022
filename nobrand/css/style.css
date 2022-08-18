@@ -1,0 +1,756 @@
+@font-face {
+    font-family: 'GongGothicBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GongGothicMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GongGothicLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'GongGothicLight';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    vertical-align: top;
+}
+
+.clear::after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+#wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+#header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 50;
+}
+
+#header .logo {
+    padding: 20px 20px;
+    box-sizing: border-box;
+}
+
+#header .logo img {
+    height: 30px;
+}
+
+#header .btns {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+#header .btns a {
+    margin-left: 10px;
+}
+
+#header .btns img {
+    height: 30px;
+}
+
+.openM {
+    position: absolute;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 500;
+}
+
+.openM img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    padding: 30px;
+    cursor: pointer;
+}
+
+.openM .gnb {
+    position: absolute;
+    top: 150px;
+    right: 30px;
+}
+
+.openM .gnb li {
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.openM .gnb li a {
+    font-size: 50px;
+    border-bottom: 3px solid transparent;
+}
+
+.openM .gnb li:hover a {
+    border-bottom: 3px solid #000;
+}
+
+.openM .util {
+    position: absolute;
+    top: 470px;
+    right: 40px;
+}
+
+.openM .util li {
+    font-size: 30px;
+    text-align: right;
+    margin-bottom: 20px;
+    color: #888;
+}
+
+#mainVisual_pc {
+    display: none;
+}
+#mainVisual_m img {
+    width: 100%;
+    height: auto;
+}
+
+h2 {
+    text-align: center;
+    padding: 80px 0 50px 0;
+}
+
+h2 img {
+    height: 30px;
+}
+
+#menu {
+    position: relative;
+    background: url(../images/bg_menu.jpg)no-repeat 0 0 /auto 100%;
+    padding: 20px 0;
+}
+
+#menu .menu_index {
+    width: 100%;
+    position: absolute;
+    top: 170px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 13px;
+    font-family: 'GongGothicMedium';
+}
+
+#menu .menu_index li {
+    padding-bottom: 5px;
+}
+#menu .menu_index li:hover{
+    color:#ffc600;
+}
+
+#menu .RL {
+    display: none;
+}
+
+#menu .list {
+    margin: 40px 0 50px 0;
+    text-align: center;
+}
+
+#menu .list img {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#menu .list .subtit {
+    color: #ffc600;
+    margin-top: 20px;
+}
+
+#menu .list .tit {
+    font-size: 25px;
+    font-family: 'GongGothicBold';
+    margin: 10px 0;
+}
+
+#menu .list .txt {
+    font-size: 13px;
+    line-height: 1.5em;
+}
+
+.news {
+    margin: 0 auto;
+    padding: 0 50px 0 50px;
+}
+
+.news a {
+    font-family: 'GongGothicBold';
+    font-size: 27px;
+    margin: 50px 0 0 10px;
+    display: block;
+    padding-bottom: 100px;
+}
+
+.news .more {
+    margin-top: 40px;
+    height: 10px;
+    transition: all 0.5s;
+    padding: 10px 0 0 0;
+}
+.news .more:hover{
+    transform: translateX(10px);
+}
+.news .box {
+    width: 100%;
+    position: relative;
+}
+
+.news1 .box video {
+    width: 100%;
+    border: 3px solid #000;
+    background-color: #fabd00;
+}
+
+.order {
+    position: absolute;
+    top: -35px;
+    right: -35px;
+    z-index: 200;
+    width: 30%;
+    animation-name: order;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes order {
+    0% {
+        transform: scale(1);
+        transform-origin: 0 bottom;
+    }
+
+    50% {
+        transform: scale(1.1);
+        transform-origin: 0 bottom;
+    }
+
+    100% {
+        transform: scale(1);
+        transform-origin: 0 bottom;
+    }
+}
+
+.cola {
+    width: 100%;
+    border: 3px solid #000;
+    background-color: #fabd00;
+}
+
+.nbb {
+    position: absolute;
+    left: -30px;
+    top: -40px;
+    width: 26%;
+    animation-name: nbb;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes nbb {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+#store {
+    position: relative;
+    height: 60vh;
+    background: #fff9dd url(../images/bg_store_m.jpg)no-repeat 0 0 / 100% auto;
+}
+
+.rollingbanner {
+    width: 100%;
+    height: 40px;
+    color: #fff;
+    background-color: #000;
+}
+
+.rollingbanner>.wrap {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.roller {
+    position: absolute;
+    height: 100%;
+}
+
+.roller>ul {
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.roller>ul>li {
+    padding-right: 30px;
+    color:#ffc600;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 40px;
+    white-space: nowrap;
+    font-family: 'GongGothicBold';
+    /* 줄바꿈없이 한줄로 나오게 하기 */
+}
+
+.roller.original {
+    animation: 50s linear 0s infinite normal forwards running rollingleft1;
+}
+
+.roller.clone {
+    animation: 50s linear 0s infinite normal none running rollingleft2;
+}
+
+@keyframes rollingleft1 {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-100%);
+    }
+
+    50.01% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes rollingleft2 {
+
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-200%);
+    }
+}
+
+#store .newstore {
+    display: none;
+}
+
+#store .search {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 200;
+}
+
+#store .search .logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 110px;
+}
+
+#store .search p {
+    text-align: center;
+    margin: 50px 0 20px 0;
+}
+
+#store .search input {
+    outline: none;
+    border: 0;
+    border-bottom: 2px solid #000;
+    border-radius: 0;
+    background: transparent url(../images/search.png)no-repeat center right/auto 100%;
+    width: 150px;
+    height: 20px;
+}
+
+#footer {
+    background-color: #fff9dd;
+    padding: 20px;
+}
+
+#footer .logo {
+    width: 80px;
+}
+
+#footer p {
+    font-size: 11px;
+    margin: 20px 0;
+    line-height: 1.4em;
+}
+
+.fmenu {
+    display: flex;
+    margin: 40px 0 20px 0;
+}
+
+.fmenu li {
+    margin-right: 5px;
+    font-size: 11px;
+    line-height: 10px;
+}
+
+.fmenu li a {
+    padding-right: 5px;
+}
+
+.etcbtn {
+    margin-bottom: 30px;
+}
+
+.etcbtn a {
+    border: 1px solid #000;
+    padding: 10px 20px;
+    font-size: 13px;
+}
+
+#side {
+    position: fixed;
+    right: 5px;
+    bottom: 50px;
+    display: none;
+}
+
+#side a {
+    display: block;
+    width: 35px;
+    margin-bottom: 10px;
+}
+
+#side a img {
+    width: 100%;
+}
+@media all and (min-width:900px){
+    #header .logo {
+        padding: 30px;
+    }
+    
+    #header .logo img {
+        height: 40px;
+    }
+    
+    #header .btns {
+        right: 30px;
+        top: 30px;
+    }
+    
+    #header .btns img {
+        height: 40px;
+    }
+    
+    .openM {
+        max-width: 400px;
+    }
+    
+    #mainVisual_m {
+        display: none;
+    }
+    
+    #mainVisual_pc {
+        display: block;
+        width: 100%;
+    }
+    
+    #mainVisual_pc img {    
+        width: 100%;
+    }
+    
+    .slick-dots {
+        position: absolute;
+        top: 48%;
+        right: 30px;
+    }
+    
+    .slick-dots button {
+        color: #000;
+        cursor: pointer;
+        width: 20px;
+        font-family: 'GongGothicMedium';
+        outline: none;
+        border: none;
+        background-color: transparent;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    .slick-active button {
+        color: #fff;
+        border-bottom: 2px solid #fff;
+    }
+    
+    #menu {
+        background: url(../images/bg_menu.jpg)repeat 0 0 /100% auto;
+    }
+    
+    #menu .menu_index {
+        width: 40%;
+        top: 135px;
+        left: 260px;
+        transform: translateX(0);
+        font-size: 16px;
+    }
+    
+    #menu .list {
+        margin: 50px 0 120px 0;
+    }
+    
+    #menu .slick-arrow {
+        position: absolute;
+        top: -150px;
+        right: 80px;
+        width: 52px;
+        height: 55px;
+        outline: none;
+        border: none;
+        font-size: 0;
+        cursor: pointer;
+    }
+    #menu .slick-prev {
+        background: transparent url(../images/left.png)no-repeat right bottom/100% auto;
+        right: 150px;
+    }
+    #menu .slick-prev:hover {
+        background: transparent url(../images/left_h.png)no-repeat right bottom/100% auto;
+    }
+    
+    #menu .slick-next {
+        background: transparent url(../images/right.png)no-repeat right bottom/100% auto;
+    }
+    #menu .slick-next:hover {
+        background: transparent url(../images/right_h.png)no-repeat right bottom/100% auto;
+    }
+    
+    h2 {
+        text-align: left;
+        padding: 100px 0 50px 80px;
+    }
+    
+    h2 img {
+        height: 40px;
+    }
+    
+    .news .box {
+        width: 30%;
+    }
+    
+    .news1 {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        position: relative;
+        padding-top: 200px;
+        background: url(../images/bg_news1.jpg)no-repeat right 0;
+    }
+    .news1 .box{
+        margin-top: 10vh;
+        width: 30%;
+    }
+    .news1 a {
+        width: 35%;
+        margin-top: 20vh;
+        font-size: 30px;
+        line-height: 1.2em;
+    }
+    .news a{
+        padding-bottom: 0;
+    }
+    .news1 h2{
+        position: absolute;
+        top: 0;left: 0;
+    }
+    
+    .news2 {
+        display: flex;
+        justify-content: space-evenly;
+        background: url(../images/bg_news2.jpg)repeat-y right 0;
+    }
+    .news2 a {
+        margin-top: 30vh;
+        width: 35%;
+        font-size: 30px;
+        line-height: 1.2em;
+    }
+    .news2 .box{
+        margin: 20vh 0 15vh 0;
+        width: 30%;
+    }
+    #store {
+        height: 70vh;
+        background: #fff9dd url(../images/bg_store.jpg)no-repeat 0 0 / 100% auto;
+    }
+    
+    #store .search {
+        top: 42%;
+        left: 17%;
+    }
+    #store .search .logo {
+        width: 150px;
+    }
+    #store .search p {
+        font-size: 20px;
+        margin: 70px 0 20px 0;
+    }
+    #store .search input{
+        width: 190px;
+        height: 25px;
+    }
+    
+    #store .newstore {
+        display: block;
+        position: absolute;
+        left: 34%;
+        top: 30%;
+        width: 100%;
+    }
+    
+    #store .newstore li {
+        float: left;
+        width: 20%;
+        margin-right: 10px;
+    }
+    #store .newstore .up{
+        animation: up;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    }
+    @keyframes up {
+        0%{
+            transform: translateY(0);
+        }
+        33%{
+            transform: translateY(5px);
+        }
+        66%{
+            transform: translateY(-5px);
+        }
+        100%{
+            transform: translateY(0);
+        }
+    }
+    #store .newstore .down{
+        animation: down;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    }
+    @keyframes down {
+        0%{
+            transform: translateY(0);
+        }
+        33%{
+            transform: translateY(-5px);
+        }
+        66%{
+            transform: translateY(5px);
+        }
+        100%{
+            transform: translateY(0);
+        }
+    }
+    #store .newstore li img {
+        width: 100%;
+    }
+    #side{
+        right: 30px;
+    }
+    #side a {
+        width: 80px;
+        transition: all 0.5s;
+    }
+    
+    #side a:hover {
+        transform: scale(1.1);
+    }
+    .etcbtn {
+        margin-bottom: 20px;
+    }
+    #footer .logo {
+        width: 120px;
+    }
+
+}
+@media all and (min-width:1280px) {
+    #mainVisual_pc {
+        height: 100vh;
+    }
+    
+    #mainVisual_pc img {    
+        height: 100%;
+    }
+    #menu{
+        height: 100vh;
+    }
+    .news{
+        height: 100vh;
+    }
+    .news1 a {
+        width: 35%;
+        margin-top: 30vh;
+        font-size: 40px;
+        line-height: 1.2em;
+    }
+    .news2 a {
+        width: 35%;
+        margin-top: 40vh;
+        font-size: 40px;
+        line-height: 1.2em;
+    }
+    #store {
+        height: 100vh;
+    }
+    #store .search {
+        top: 34%;
+        left: 17%;
+    }
+}

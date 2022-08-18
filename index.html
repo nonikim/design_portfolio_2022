@@ -6,15 +6,60 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Noeun Kim Portfolio 2022</title>
+  <link rel="icon" href="img/favicon2.png">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/main.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="js/jquery-3.6.0.min.js">
+  <script src="js/jquery-3.6.0.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+  <script src="js/main.js"></script>
 </head>
 
 <body>
   <div id="wrap">
+    <div class='your-cursor'></div>
+    <div class="follow"></div>
+    <div class="menu">
+      <div class="btn trigger">
+        <span class="line"></span>
+      </div>
+      <div class="icons">
+        <div class="rotater">
+          <div class="btn btn-icon">
+            <img src="img/contact_tit.png">
+          </div>
+        </div>
+        <div class="rotater">
+          <div class="btn btn-icon">
+            <img src="img/works.png">
+          </div>
+        </div>
+        <div class="rotater">
+          <div class="btn btn-icon">
+            <img src="img/persona.png">
+          </div>
+        </div>
+        <div class="rotater">
+          <div class="btn btn-icon">
+            <img src="img/skills.png">
+          </div>
+        </div>
+        <div class="rotater">
+          <div class="btn btn-icon">
+            <img src="img/intro.png">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="worksmenu">
+      <ul>
+        <li><a href="#uxui1"><img src="img/menu_uiux_w.png"></a></li>
+        <li><a href="#app2"><img src="img/menu_app_w.png"></a></li>
+        <li><a href="#web3"><img src="img/menu_web_w.png"></a></li>
+        <li><a href="#bx4"><img src="img/menu_bx_w.png"></a></li>
+      </ul>
+    </div>
     <div class="main">
       <canvas id="canvas"></canvas>
       <div data-aos="fade-right" data-aos-duration="2000" class="design">
@@ -26,7 +71,7 @@
       <div data-aos="fade-left" data-aos-duration="2000" data-aos-delay="300" class="portfolio">
         <img src="img/portfolio.gif">
       </div>
-    </div>
+    </div><!-- main -->
     <div id="intro">
       <div id='stars'></div>
       <div id='stars2'></div>
@@ -41,7 +86,10 @@
         </ul>
       </div><!-- hello -->
       <div class="pas">
-        <img data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" src="img/pas.png" class="passport">
+        <img data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000" src="img/pas.png" class="passport">
+        <div class="profilebox" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+          <img src="img/profile.gif" class="profile">
+        </div>
       </div><!-- info -->
     </div><!-- intro -->
     <div class="skillsarea">
@@ -73,50 +121,45 @@
       </div>
       <ul class="persona">
         <li class="pr1">
-          <div>트렌드 민감성</div>
+          <div>트렌드 민감성<span></span></div>
           <p>패션과 대중문화에 관심이 많고<br>
             새로운 것에 대한 경험을 좋아합니다.</p>
         </li>
         <li class="pr2">
-          <div>깊은 몰입도</div>
+          <div>깊은 몰입도<span></span></div>
           <p>어떤 일을 시작하면 깊이 몰입해 평소<br>
             일상속에서도 계속 생각에 잠겨있곤합니다.</p>
         </li>
         <li class="pr3">
-          <div>고민보다 GO</div>
+          <div>고민보다 GO<span></span></div>
           <p>고민하며 망설이기보다는 먼저 시도해보고<br>
             그 결과에 따라 다음 스텝으로 나아갑니다.
           </p>
         </li>
         <li class="pr4">
-          <div>긍정의 힘</div>
+          <div>긍정의 힘<span></span></div>
           <p>‘좋은 게 좋은 거’라는 말을 좋아하고<br>
             긍정적인 에너지를 중요하게 여깁니다.</p>
         </li>
         <li class="pr5">
-          <div>5G급 습득력</div>
+          <div>5G급 습득력<span></span></div>
           <p>새로운 것을 배울 때 이해가 빠르고<br>
             습득을 잘하는 편입니다. </p>
         </li>
         <li class="pr6 ">
-          <div>겉.바.속.촉</div>
+          <div>겉.바.속.촉<span></span></div>
           <p>말수가 적어서 겉모습은 건조해보일 수 있지만<br>
             알고보면 속은 촉촉한, 오래 볼수록 좋은 사람입니다.</p>
         </li>
-
       </ul><!-- persona -->
     </div><!-- personaarea -->
     <div class="works_list">
       <img src="img/list_bg.jpg">
+      <div class="grd"></div>
+      <img src="img/lets.gif" class="lets">
       <img src="img/works.png" class="tit">
-      <ul>
-        <li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="0"><img src="img/menu_uiux_w.png"></li>
-        <li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100"><img src="img/menu_app_w.png"></li>
-        <li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200"><img src="img/menu_web_w.png"></li>
-        <li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300"><img src="img/menu_bx_w.png"></li>
-      </ul>
     </div><!-- list -->
-    <div class="works_uiux">
+    <div class="works_uiux" id="uxui1">
       <div class="uiuxlist">
         <div data-aos="fade-up" data-aos-duration="2000" data-aos-delay="500" data-aos-anchor-placement="top-bottom"><a
             rel="hover-shadow" class="button hover-shadow"><img src="img/in_dyson.png"></a></div>
@@ -126,7 +169,7 @@
             rel="hover-shadow" class="button hover-shadow"><img src="img/in_nobrand.png"></a></div>
         <div data-aos="fade-up" data-aos-duration="2000" data-aos-delay="800" data-aos-anchor-placement="top-bottom"><a
             rel="hover-shadow" class="button hover-shadow"><img src="img/in_aladin.png"></a></div>
-            <img src="img/uiuxlist_bg.jpg">
+        <img src="img/uiuxlist_bg.jpg">
       </div><!-- uiuxlist -->
       <div class="dyson">
         <div class="dyson_pc">
@@ -140,7 +183,7 @@
         </div><!-- dyson_mob -->
         <div class="dyson_txt" data-aos="fade-left" data-aos-duration="1000">
           <img src="img/uiux_dyson_txt.png">
-          <a href="#">바로보기</a>
+          <a href="dyson/index.html">바로보기</a>
         </div>
       </div><!-- dyson -->
       <div class="jomalone">
@@ -152,7 +195,7 @@
         </div><!-- jomalone_mob -->
         <div class="jomalone_txt" data-aos="fade-right" data-aos-duration="1000">
           <img src="img/uiux_jomalone_txt.png">
-          <a href="#">바로보기</a>
+          <a href="jomalone/index.html">바로보기</a>
         </div><!-- jomalone_txt -->
       </div><!-- jomalone -->
       <div class="nobrand">
@@ -164,7 +207,7 @@
         </div><!-- nobrand_mob -->
         <div class="nobrand_txt" data-aos="fade-down" data-aos-duration="1000">
           <img src="img/uiux_nobrand_txt.png">
-          <a href="#">바로보기</a>
+          <a href="nobrand/index.html">바로보기</a>
         </div><!-- nobrand_txt -->
       </div><!-- nobrand -->
       <div class="aladin">
@@ -174,28 +217,28 @@
         </div><!-- aladin_pc -->
         <div class="aladin_txt" data-aos="fade-right" data-aos-duration="1000">
           <img src="img/uiux_aladin_txt.png">
-          <a href="#">바로보기</a>
+          <a href="aladin/index.html">바로보기</a>
         </div><!-- aladin_txt -->
       </div><!-- aladin -->
     </div><!-- works_uiux -->
-    <div class="app_gajago">
+    <div class="app_gajago" id="app2">
       <img src="img/gajago_txt.png" class="gajago_txt">
-      <a href="#" class="btn">자세히보기</a>
-      <img src="img/cloud1.png" class="cloud1">      
+      <a href="gajago/index.html" class="btn">자세히보기</a>
+      <img src="img/cloud1.png" class="cloud1">
       <img src="img/gajago.png" class="gajago">
       <img src="img/welcom.png" class="welcome">
       <img src="img/earth.gif" class="earth">
       <img src="img/where.gif" class="where">
-      <img src="img/cloud2.png" class="cloud2">      
+      <img src="img/cloud2.png" class="cloud2">
     </div>
-    <div class="web">
+    <div class="web" id="web3">
       <img src="img/web-2.png" class="web_cont">
-      <img src="img/gradient.png" class="web_gd">
       <img src="img/gradient-r.png" class="web_gd_r">
     </div><!-- web -->
-    <div class="bx">
+    <div class="bx" id="bx4">
       <img src="img/dormirelax.png" class="dormirelax" data-aos="fade-up" data-aos-duration="1000">
       <img src="img/marssleep.png" class="marssleep" data-aos="fade-up" data-aos-duration="1000">
+      <div class="grd"></div>
     </div><!-- bx -->
     <div class="contact">
       <img src="img/contact_bg.jpg" class="bg">
@@ -209,6 +252,51 @@
 
   <script src='https://cdnjs.cloudflare.com/ajax/libs/gl-matrix/2.1.0/gl-matrix.js'></script>
   <script>
+    var cursor = $(".your-cursor"),
+      follower = $(".follow");
+
+    var posX = 0,
+      posY = 0;
+
+    var mouseX = 0,
+      mouseY = 0;
+
+    TweenMax.to({}, 0.016, {
+      repeat: -1,
+      onRepeat: function () {
+        posX += (mouseX - posX) / 9;
+        posY += (mouseY - posY) / 9;
+
+        TweenMax.set(follower, {
+          css: {
+            left: posX - 12,
+            top: posY - 12
+          }
+        });
+
+        TweenMax.set(cursor, {
+          css: {
+            left: mouseX,
+            top: mouseY
+          }
+        });
+      }
+    });
+
+    $(document).on("mousemove", function (e) {
+      mouseX = e.pageX;
+      mouseY = e.pageY;
+    });
+
+    $("a").on("mouseenter", function () {
+      cursor.addClass("active");
+      follower.addClass("active");
+    });
+    $("a").on("mouseleave", function () {
+      cursor.removeClass("active");
+      follower.removeClass("active");
+    });
+
 
     let canvas = document.getElementById('canvas');
     let flr = Math.floor;
@@ -338,7 +426,6 @@
       halfh = canvas.height / 2;
     };
 
-    AOS.init();
   </script>
 </body>
 

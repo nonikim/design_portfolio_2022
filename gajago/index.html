@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAJAGO 가자고</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        img {
+            vertical-align: text-bottom;
+            width: 100%;
+            height: auto;
+        }
+        .main{
+            position: absolute;
+            top: 25%;
+            right: 13%;
+            width: 27%;
+            animation-name: main;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        @keyframes main{
+            0%{
+                transform: translateY(0);
+            }
+            50%{
+                transform: translateY(-3%);
+            }
+            100%{
+                transform: translateY(0);
+            }
+        }
+        .maincloud{
+            position: absolute;
+            top: 34%;
+            right: 3%;
+            width: 45%;
+            animation-name: cloud;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        @keyframes cloud{
+            0%{
+                transform: translateX(0);
+            }
+            50%{
+                transform: translateX(-3%);
+            }
+            100%{
+                transform: translateX(0);
+            }
+        }
+        .bottom {
+            position: relative;
+        }
+
+        .earth {
+            position: absolute;
+            top: 7%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 15%;
+        }
+
+        .search {
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 15%;
+        }
+        .end{
+            position: absolute;
+            bottom:4%;
+            left: 42%;
+            transform: translateX(-50%);
+            width: 15%;
+            animation-name: main;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        .endcloud{
+            position: absolute;
+            transform: translateX(-50%);
+            animation-name: cloud;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        .c1{
+            width: 18%;
+            bottom:6%;
+            left: 20%;
+        }
+        .c2{
+            width: 20%;
+            bottom:4%;
+            right: 16%;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="img/gajago_01.jpg">
+    <img src="img/main1.png" class="main">
+    <img src="img/main_cloud.png" class="maincloud">
+    <img src="img/gajago_02.jpg">
+    <div class="bottom">
+        <img src="img/gajago_bottom_01.jpg">
+        <img src="img/earth.gif" class="earth">
+        <img src="img/어디로떠나실건가요.gif" class="search">
+        <img src="img/gajago_bottom_02.jpg">
+        <img src="img/end1.png" class="end">
+        <img src="img/end_cloud_1.png" class="endcloud c1">
+        <img src="img/end_cloud_2.png" class="endcloud c2">
+    </div>
+</body>
+
+</html>
