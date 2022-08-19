@@ -312,7 +312,7 @@ canvas {
 }
 
 .hello {
-  height: 50vh;
+  height: 70vh;
 }
 
 .hello1 {
@@ -325,7 +325,7 @@ canvas {
   -webkit-background-clip: text;
   background-size: 400% 400%;
   animation: Gradient 5s ease infinite;
-  font-weight:800;
+  font-weight: 800;
 }
 
 .hello2 {
@@ -338,7 +338,7 @@ canvas {
   -webkit-background-clip: text;
   background-size: 400% 400%;
   animation: Gradient 5s ease infinite;
-  font-weight:800;
+  font-weight: 800;
 }
 
 .think {
@@ -353,7 +353,7 @@ canvas {
   font-size: 22px;
   font-weight: 500;
   color: #fff;
- /*  text-shadow: -1px 0px #fff, 0px 1px #fff, 1px 0px #fff, 0px -1px #fff; */
+  /*  text-shadow: -1px 0px #fff, 0px 1px #fff, 1px 0px #fff, 0px -1px #fff; */
 }
 
 .pas {
@@ -803,22 +803,27 @@ canvas {
 .uiuxlist>img {
   width: 100%;
 }
-.uiuxlist div:hover{
-  animation-name: listhover ;
+
+.uiuxlist div:hover {
+  animation-name: listhover;
   animation-duration: 1s;
   animation-iteration-count: infinite;
 }
+
 @keyframes listhover {
-  0%{
+  0% {
     opacity: 1;
   }
-  50%{
+
+  50% {
     opacity: 0.5;
   }
-  100%{
+
+  100% {
     opacity: 1;
   }
 }
+
 .uiuxlist div:nth-child(1) {
   position: absolute;
   top: 25vh;
