@@ -1,5 +1,5 @@
 @media screen and (max-width: 500px) {
-            .container{display:none;}
+            #wrap{display:none;}
         }
 
 #wrap {
