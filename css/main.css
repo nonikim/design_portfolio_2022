@@ -700,7 +700,7 @@ canvas {
   position: absolute;
   top: 20vw;
   left: 45vw;
-  font-size: 19px;
+  font-size: 17px;
 }
 
 .pr2 {
@@ -714,7 +714,7 @@ canvas {
   position: absolute;
   top: 15vw;
   left: 65vw;
-  font-size: 15px;
+  font-size: 13px;
 }
 
 .persona .pr3 div {
@@ -740,6 +740,7 @@ canvas {
   position: absolute;
   top: 31vw;
   left: 68vw;
+  font-size: 13px;
 }
 
 .persona .pr5 div {
@@ -752,6 +753,7 @@ canvas {
   position: absolute;
   top: 36vw;
   left: 43vw;
+  font-size: 13px;
 }
 
 .persona .pr6 div {
